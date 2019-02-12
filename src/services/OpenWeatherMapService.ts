@@ -3,7 +3,7 @@ const API_KEY = '8b05a3552ea5162ff5046cc8caa5c213'
 
 import axios from 'axios'
 class OpenWeatherMapServiceClass {
-  current(city) {
+  current(city: string) {
     const params = {
       appid: API_KEY,
       units: 'metric',
@@ -14,7 +14,7 @@ class OpenWeatherMapServiceClass {
       params
     });
   }
-  forecast(city) {
+  forecast(city: string) {
     const params = {
       appid: API_KEY,
       units: 'metric',

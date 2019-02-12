@@ -1,3 +1,4 @@
+
 export default {
   state: {
     message: "Hello!!",
@@ -8,4 +9,4 @@ export default {
     ],
     selectedCity: { name: 'tokyo' }
   }
-}
+} as StoreInterface.Store
